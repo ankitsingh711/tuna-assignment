@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 const RegisterForm = () => {
     return (
         <div className="contact_form__container">
-            <h2>LOGIN TO YOUR ACCOUNT</h2>
+            <h2>CREATE YOUR ACCOUNT</h2>
             <div className="red_box" />
 
             <div style={{ marginTop: "20px" }}>
@@ -18,7 +20,8 @@ const RegisterForm = () => {
             </form>
             <input type="submit" value="SignUp" />
             <div style={{marginTop: "20px"}}>
-            <span>Already have an account? <button style={{border: "none", background: "none", color: "black", fontWeight: "700"}}>LogIn !</button></span>
+            <span>Already have an account? <NavLink to="/login">
+            <button style={{border: "none", background: "none", color: "black", fontWeight: "700"}}>LogIn !</button></NavLink></span>
             </div>
         </div>
     )

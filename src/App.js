@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import LogIn from "./pages/login";
+import Register from "./pages/register";
 import Contact from "./pages/contact";
 import AboutUs from "./pages/about";
 import links from "./constants/NavLinks";
@@ -29,6 +30,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/recipes/:id" element={<Recipes />} />

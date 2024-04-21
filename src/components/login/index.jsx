@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+
+
 const LogInForm = () => {
     return (
         <div className="contact_form__container">
@@ -20,8 +23,10 @@ const LogInForm = () => {
                 </button>
             </div>
             <input type="submit" value="Login" />
-            <div style={{marginTop: "20px"}}>
-            <span>Don't have an account? <button style={{border: "none", background: "none", color: "black", fontWeight: "700"}}>Register now!</button></span>
+            <div style={{ marginTop: "20px" }}>
+                <span>Don't have an account? <NavLink to="/register">
+                    <button style={{ border: "none", background: "none", color: "black", fontWeight: "700" }}>Register now!</button>
+                </NavLink></span>
             </div>
         </div>
     )

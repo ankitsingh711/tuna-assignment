@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import LogInImg from '../../assets/png/login_form.png';
-import LogInForm from "../../components/login";
+import ImgBurger from '../../assets/png/contact_page_img.png';
+import ContactForm from "../../components/contact";
 
-class LogIn extends Component {
+class Contact extends Component {
     
     render() {
         return (
             <div className="contact_main__container">
                 <div className="contact_from_section">
-                    <LogInForm />
+                    <ContactForm />
                 </div>
                 <div className="img__section_contact">
-                    <img src={LogInImg} alt="burgerimg" />
+                    <img src={ImgBurger} alt="burgerimg" />
                 </div>
             </div>
         );
     }
 }
 
-export default LogIn;
+export default Contact;

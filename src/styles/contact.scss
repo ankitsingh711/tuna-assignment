@@ -1,4 +1,4 @@
-.login_main__container {
+.contact_main__container {
     width: 80%;
     height: 500px;
     margin-left: 300px;
@@ -13,12 +13,12 @@
     }
 }
 
-.login_from_section {
+.contact_from_section {
     width: 50%;
     margin-top: 20px;
 }
 
-.login_form__container {
+.contact_form__container {
     h2{
     color: #03337B;
     font-family: "Work Sans";
@@ -61,12 +61,5 @@
         display: block;
         cursor: pointer;
         border-radius: 4px;
-    }
-
-    .forgot-pass {
-        float: right;
-        button{
-            border: none;
-        }
     }
 }

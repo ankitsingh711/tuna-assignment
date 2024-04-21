@@ -1,0 +1,133 @@
+.main__container{
+    width: 80%;
+    margin: auto;
+}
+
+.top_menu_section{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.about_us_section {
+    width: 95%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    h2{
+        font-weight: bold;
+    }
+
+    img{
+        width: 400px;
+    }
+
+    .about_text_section{
+        padding: 40px;
+        font-family: Work Sans;
+        margin-top: 30px;
+        font-weight: 300;
+        line-height: 2;
+    }
+
+    .read_more_btn{
+        margin-top: 40px;
+
+        button{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 7px 7px;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+    }
+}
+
+.curated_collection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+    row-gap: 30px;
+    column-gap: 30px;
+
+    div{
+
+        img{
+            width: 400px;
+        }
+        
+        h3{
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+           button{
+            border: 1px solid red;
+            color: red;
+            padding: 8px 12px;
+            background: none;
+            cursor: pointer;
+           }
+        }
+    }
+}
+
+.recipes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    h2{
+        font-weight: 500;
+    }
+
+    h3{
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .recipes_1{
+        width: 65%;
+        img{
+            width: 600px;
+        }
+    }
+
+    .recipes_2{
+        width: 30%;
+        
+        img{
+            width: 400px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        div{
+            margin-bottom: 20px;
+        }
+    }
+
+    .recipes_bottom{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 33px;
+        }
+        margin-top: 20px;
+
+        span{
+            margin-top: 4px;
+            font-weight: 600;
+        }
+    }
+}

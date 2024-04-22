@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux';
+import { selectIsAuthenticated, logout } from '../../store/authenticationSlice';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isAuthenticated = useSelector(selectIsAuthenticated);
+  const dispatch = useDispatch();
 
   const closeMenuOnMobile = () => {
     if (window.innerWidth >= 1150) {
@@ -22,9 +14,13 @@ const Navbar = () => {
     }
   };
 
+  const handleLogout = () => {
+    dispatch(logout());
+  };
+
   return (
     <header className="header">
-      <nav className={`nav container ${scrollY > 600 ? "scrolled" : ""}`}>
+      <nav className={`nav container`}>
         <NavLink to="/" className="nav__logo">
           Tastebites
         </NavLink>
@@ -66,15 +62,25 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/login"
-                className="nav__link"
-                activeClassName="active"
-                id="login-btn"
-                onClick={closeMenuOnMobile}
-              >
-                Login / Register
-              </NavLink>
+              {isAuthenticated ? (
+                <button
+                  className="nav__link"
+                  id="logout-btn"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </button>
+              ) : (
+                <NavLink
+                  to="/login"
+                  className="nav__link"
+                  activeClassName="active"
+                  id="login-btn"
+                  onClick={closeMenuOnMobile}
+                >
+                  Login / Register
+                </NavLink>
+              )}
             </li>
           </ul>
         </div>

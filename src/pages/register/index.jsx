@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import LogInImg from '../../assets/png/login_form.png';
-import LogInForm from "../../components/login";
 import RegisterForm from "../../components/register";
 
 class Register extends Component {

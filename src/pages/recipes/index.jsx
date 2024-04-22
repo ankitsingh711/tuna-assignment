@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import RecipesDetails from '../../assets/png/recipes_details.png';
 
 class Recipes extends Component {
-    constructor() {
-        super()
-    }
 
     render() {
         return (
@@ -20,8 +17,8 @@ class Recipes extends Component {
                         <h2>Recipe</h2>
                         <span>Here's A Simple Recipe For Pumpkin Marshmallow Pie:</span>
 
-                        <div>
-                            <span>Ingredients:</span>
+                        <div style={{marginTop: "80px"}}>
+                            <span style={{fontWeight: "500"}}>Ingredients:</span> <br />
                             <ul>
                                 <li>
                                     <span>1 9-inch pie crust (pre-made or homemade)</span>
@@ -56,8 +53,8 @@ class Recipes extends Component {
                             </ul>
                         </div>
 
-                        <div>
-                            <span>Instructions:</span>
+                        <div style={{marginTop: "80px"}}>
+                            <span style={{fontWeight: "500"}}>Instructions:</span>
                             <ul>
                                 <li>
                                     <span>1 9-inch pie crust (pre-made or homemade)</span>
@@ -92,7 +89,7 @@ class Recipes extends Component {
                             </ul>
                         </div>
 
-                        <span>Enjoy Your Delicious Pumpkin Marshmallow Pie!</span>
+                        <div style={{marginTop: "40px"}}><span style={{fontWeight: "300"}}>Enjoy Your Delicious Pumpkin Marshmallow Pie!</span></div>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
-.main__container{
+.main__container {
     width: 80%;
     margin: auto;
 }
 
-.top_menu_section{
+.top_menu_section {
     width: 100%;
     display: flex;
     margin-top: 30px;
@@ -15,15 +15,15 @@
     display: flex;
     justify-content: space-between;
 
-    h2{
+    h2 {
         font-weight: bold;
     }
 
-    img{
+    img {
         width: 400px;
     }
 
-    .about_text_section{
+    .about_text_section {
         padding: 40px;
         font-family: Work Sans;
         margin-top: 30px;
@@ -31,10 +31,10 @@
         line-height: 2;
     }
 
-    .read_more_btn{
+    .read_more_btn {
         margin-top: 40px;
 
-        button{
+        button {
             border: none;
             background-color: black;
             color: white;
@@ -53,81 +53,100 @@
     row-gap: 30px;
     column-gap: 30px;
 
-    div{
-
-        img{
+    div {
+        img {
             width: 400px;
         }
-        
-        h3{
+
+        h3 {
             font-weight: 700;
             margin-top: 20px;
             margin-bottom: 30px;
         }
 
-        .btn{
-           button{
-            border: 1px solid red;
-            color: red;
-            padding: 8px 12px;
-            background: none;
-            cursor: pointer;
-           }
+        .btn {
+            button {
+                border: 1px solid red;
+                color: red;
+                padding: 8px 12px;
+                background: none;
+                cursor: pointer;
+            }
         }
     }
 }
 
-.recipes{
+.recipes {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
 
-    h2{
+    h2 {
         font-weight: 500;
     }
 
-    h3{
+    h3 {
         font-weight: 600;
         margin-bottom: 20px;
     }
-    .recipes_1{
+
+    .recipes_1 {
         width: 65%;
-        img{
+        img {
             width: 600px;
         }
     }
 
-    .recipes_2{
+    .recipes_2 {
         width: 30%;
-        
-        img{
+
+        img {
             width: 400px;
         }
 
-        span{
+        span {
             font-weight: bold;
         }
 
-        div{
+        div {
             margin-bottom: 20px;
         }
     }
 
-    .recipes_bottom{
+    .recipes_bottom {
         width: 100%;
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
 
-        img{
+        img {
             width: 33px;
         }
         margin-top: 20px;
 
-        span{
+        span {
             margin-top: 4px;
             font-weight: 600;
         }
+    }
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .top_menu_section{
+        flex-direction: column;
+        margin: auto;
+        margin-top: 30px;
+        margin-left:100px;
+
+        .card img {
+            width: 100%;
+        }
+    }
+
+    .about_us_section{
+        flex-direction: column;
+        width: 90%;
     }
 }

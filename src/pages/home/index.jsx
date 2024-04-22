@@ -8,7 +8,6 @@ import Curatted3 from '../../assets/png/indian-traditional-dish-with-rice-lemon-
 import Curatted4 from '../../assets/png/cheese-mayyonaise-salad-salted-peppered-tasty-inside-white-plate-brown-wood-desk.png';
 import Curatted5 from '../../assets/png/delicious-cookies-with-glass-milk.png';
 import Curatted6 from '../../assets/png/pexels-alisha-mishra-579430-1346215.png';
-import AlooParatha from '../../assets/png/aloo-paratha-gobi-paratha-also-known-as-potato-cauliflower-stuffed-flatbread-dish-originating-from-indian-subcontinent 1.png';
 import JohnDoe from '../../assets/svg/john_doe.svg';
 import Card from '../../components/cards';
 import Button from '../../components/button';
@@ -41,42 +40,42 @@ const Home = () => {
                     <div>
                         <h3>Sushi Combos For Your Next Party</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={1}/>
                 </div>
                 <div>
                     <img src={Curatted2} alt="curated_img" />
                     <div>
                         <h3>Everything Bagel</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={2}/>
                 </div>
                 <div>
                     <img src={Curatted3} alt="curated_img" />
                     <div>
                         <h3>Biriyani Combos</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={3}/>
                 </div>
                 <div>
                     <img src={Curatted4} alt="curated_img" />
                     <div>
                         <h3>Dinner Recipe Ideas</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={4}/>
                 </div>
                 <div>
                     <img src={Curatted5} alt="curated_img" />
                     <div>
                         <h3>The Ultimate Cookie Frenzy</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={5}/>
                 </div>
                 <div>
                     <img src={Curatted6} alt="curated_img" />
                     <div>
                         <h3>For the Love of Donuts</h3>
                     </div>
-                    <Button text="150 Recipes"/>
+                    <Button text="150 Recipes" id={6}/>
                 </div>
             </div>
 

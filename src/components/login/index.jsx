@@ -1,7 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
+import { login } from "../../store/authenticationSlice";
 
 
 const LogInForm = () => {
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleLogIn = () => {
+        dispatch(login());
+        navigate('/')
+    }
     return (
         <div className="contact_form__container">
             <h2>LOGIN TO YOUR ACCOUNT</h2>
@@ -22,7 +32,7 @@ const LogInForm = () => {
                     Forgot password ?
                 </button>
             </div>
-            <input type="submit" value="Login" />
+            <input type="submit" value="Login" onClick={handleLogIn}/>
             <div style={{ marginTop: "20px" }}>
                 <span>Don't have an account? <NavLink to="/register">
                     <button style={{ border: "none", background: "none", color: "black", fontWeight: "700" }}>Register now!</button>

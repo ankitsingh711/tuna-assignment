@@ -9,7 +9,7 @@
 ## Deployed Application
 
 - npm run build
-- Deployed Link - 
+- Deployed Link - https://6625cc5cba35a733122e4561--classy-cannoli-f6d3e6.netlify.app/login
 
 ## Tech Stacks Used - 
 1. React.js - UI 

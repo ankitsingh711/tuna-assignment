@@ -69,3 +69,18 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .login_main__container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img__section_contact img {
+        display: none;
+    }
+
+    .login_from_section{
+        width: 100%;
+    }
+}

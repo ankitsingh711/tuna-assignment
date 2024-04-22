@@ -1,14 +1,24 @@
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { login } from "../../store/authenticationSlice";
+import { logInRoute } from "../../services/api";
+import { useState } from "react";
 
 
 const LogInForm = () => {
+    const [ email, setEmail ] = useState('');
+    const [ password, setPassword ] = useState('');
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const handleLogIn = () => {
+        const body = {
+            email,
+            password
+        }
+        logInRoute(body);
+
         dispatch(login());
         navigate('/')
     }
@@ -24,8 +34,12 @@ const LogInForm = () => {
             </div>
 
             <form action="">
-                <input type="email" placeholder="Email*" /><br />
-                <input type="password" placeholder="Password*" /><br />
+                <input type="email" placeholder="Email*" onChange={(e)=>{
+                    setEmail(e.target.value)
+                }}/><br />
+                <input type="password" placeholder="Password*" onChange={(e)=>{
+                    setPassword(e.target.value);
+                }}/><br />
             </form>
             <div className="forgot-pass">
                 <button style={{ border: "none", background: "none", marginLeft: "400px", color: "red", cursor: "pointer" }}>
